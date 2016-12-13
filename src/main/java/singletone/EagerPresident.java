@@ -12,5 +12,4 @@ public class EagerPresident {
     public static EagerPresident getPresident() {
         return thePresident;
     }
-
 }
