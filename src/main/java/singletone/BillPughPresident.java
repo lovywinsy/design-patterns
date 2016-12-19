@@ -4,8 +4,6 @@ package singletone;
  * Created by lovywinsy on 2016/12/13.
  */
 public class BillPughPresident {
-    private static BillPughPresident thePresident;
-
     private BillPughPresident() {
     }
 
