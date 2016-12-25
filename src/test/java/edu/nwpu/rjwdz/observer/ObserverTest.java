@@ -9,6 +9,7 @@ public class ObserverTest {
     @Test
     public void observerEx() {
         System.out.println("This is a observer pattern demo");
+
         Observer observer = new Observer();
         Subject subject = new Subject();
         subject.register(observer);
@@ -16,8 +17,9 @@ public class ObserverTest {
         subject.setFlag(5);
         System.out.println("Setting flag = 25");
         subject.setFlag(25);
-        subject.unregister(observer);
+
         // No notification this time to observer, since it is unregistered.
+        subject.unregister(observer);
         System.out.println("Setting flag = 50");
         subject.setFlag(50);
     }
