@@ -5,7 +5,7 @@ import org.junit.Test;
 /**
  * Created by lovywinsy on 2016/12/25.
  */
-public class SingleTest {
+public class SingletonTest {
     @Test
     public void singletonEx() {
         System.out.println("This is a singleton pattern demo");
