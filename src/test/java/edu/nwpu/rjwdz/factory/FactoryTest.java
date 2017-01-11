@@ -16,8 +16,5 @@ public class FactoryTest {
 
         IAnimal tiger = factory.getAnimalType("Tiger");
         tiger.speak();
-
-        IAnimal lion = factory.getAnimalType("Lion");
-        lion.speak();
     }
 }
