@@ -9,18 +9,17 @@ public class BuilderTest {
     @Test
     public void builderEx() {
         System.out.println("This is a builder pattern demo");
-        ActionMovieFactory actionMovies = new ActionMovieFactory();
-        ITollywoodMovie tAction = actionMovies.getTollywoodMovie();
-        IBollywoodMovie bAction = actionMovies.getBollywoodMovie();
-        System.out.println("Action movies are:");
-        System.out.println(tAction.movieName());
-        System.out.println(bAction.movieName());
+        Director director = new Director();
 
-        ComedyMovieFactory comedyMovies = new ComedyMovieFactory();
-        ITollywoodMovie tComedy = comedyMovies.getTollywoodMovie();
-        IBollywoodMovie bComedy = comedyMovies.getBollywoodMovie();
-        System.out.println("Comedy movies are:");
-        System.out.println(tComedy.movieName());
-        System.out.println(bComedy.movieName());
+        IBuilder carBuilder = new Car();
+        IBuilder motorBuilder = new MotorCycle();
+
+        director.construct(carBuilder);
+        Product p1 = carBuilder.getVehicle();
+        p1.show();
+
+        director.construct(motorBuilder);
+        Product p2 = motorBuilder.getVehicle();
+        p2.show();
     }
 }
