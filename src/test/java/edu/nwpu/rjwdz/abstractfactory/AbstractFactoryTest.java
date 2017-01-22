@@ -8,6 +8,7 @@ import org.junit.Test;
 public class AbstractFactoryTest {
     @Test
     public void abstractFactoryEx() {
+        System.out.println("This is a abstract factory pattern demo");
         ActionMovieFactory actionMovies = new ActionMovieFactory();
         ITollywoodMovie tAction = actionMovies.getTollywoodMovie();
         IBollywoodMovie bAction = actionMovies.getBollywoodMovie();
