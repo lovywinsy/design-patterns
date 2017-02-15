@@ -10,6 +10,4 @@ public abstract class Friend {
     public Friend(Mediator mediator) {
         this.mediator = mediator;
     }
-
-
 }
