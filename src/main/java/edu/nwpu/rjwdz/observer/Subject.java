@@ -9,14 +9,14 @@ import java.util.List;
 public class Subject implements ISubject {
     private List<Observer> observerList = new ArrayList<>();
 
-    private int _flag;
+    private int flag;
 
     public int getFlag() {
-        return _flag;
+        return flag;
     }
 
     public void setFlag(int _flag) {
-        this._flag = _flag;
+        this.flag = _flag;
         notifyObservers();
     }
 
