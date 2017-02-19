@@ -9,14 +9,13 @@ public class DecoratorTest {
     @Test
     public void decoratorEx() {
         System.out.println("This is a decorator pattern demo");
-        ConcreteComponent cc = new ConcreteComponent();
+        Girl g1 = new AmericanGirl();
+        System.out.println(g1.getDescription());
 
-        ConcreteDecoratorEx_1 cd_1 = new ConcreteDecoratorEx_1();
-        cd_1.setComponent(cc);
-        cd_1.doSomeWork();
+        Science g2 = new Science(g1);
+        System.out.println(g2.getDescription());
 
-        ConcreteDecoratorEx_2 cd_2 = new ConcreteDecoratorEx_2();
-        cd_2.setComponent(cc);
-        cd_2.doSomeWork();
+        Art g3 = new Art(g2);
+        System.out.println(g3.getDescription());
     }
 }
