@@ -5,6 +5,6 @@ package edu.nwpu.rjwdz.decorator;
  */
 public class EuropeanGirl extends Girl {
     public EuropeanGirl() {
-        description = "+European";
+        description = "+ European ";
     }
 }
